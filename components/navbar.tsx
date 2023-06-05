@@ -1,7 +1,6 @@
 import { Poppins } from "next/font/google";
 import { ScrollLink } from "./ScrollLink";
-import Link from "next/link";
-import {FaGithubSquare, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
+import {FaGithubSquare, FaLinkedin} from "react-icons/fa";
 
 const styles = {
   navbar: {

@@ -8,18 +8,6 @@ const styles = {
     webtoolkitBackdropFilter: "blur( 20px )",
     padding: "9rem 10rem",
   },
-  textContainer: {
-    fontFamily: "Poppins, Sans-serif",
-  },
-  paragraphs: {
-    fontSize: "14pt",
-  },
-  icons: {
-    margin: "0.3rem",
-  },
-  iconsLink: {
-    color: "white",
-  },
 };
 
 function Contact() {
@@ -31,15 +19,15 @@ function Contact() {
         <div className="flex justify-center">
             <div className="flex flex-row">
           <a href="https://github.com/wevertor" className="m-1">
-            <FaGithub size={32} style={styles.icons} />
+            <FaGithub size={32} />
           </a>
 
           <a href="https://linkedin.com/in/wevertor" className="m-1">
-            <FaLinkedin size={32} style={styles.icons} />
+            <FaLinkedin size={32} />
           </a>
 
           <a href="https://instagram.com/trindamaster" className="m-1">
-            <FaInstagram size={32} style={styles.icons} />
+            <FaInstagram size={32} />
           </a>
             </div>
         </div>

@@ -3,28 +3,7 @@ const styles = {
     background: "rgba( 0, 0, 0, 0.65 )",
     //boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
     backdropFilter: "blur( 20px ) ",
-    webtoolkitBackdropFilter: "blur( 20px )",
-  },
-  firstLine: {
-    color: "#0EE6B7",
-    fontSize: "3em",
-  },
-  secondLine: {
-    color: "white",
-    fontWeight: "600",
-    fontSize: "4em",
-  },
-  thirdLine: {
-    fontSize: "5em",
-    fontWeight: "bold",
-    color: "rgba(0, 0, 0, 0)",
-    webkitTextStrokeWidth: "1px",
-    webkitTextStrokeColor: "#0EE6B7",
-  },
-  banner: {
-    width: "auto",
-    maxWidth: "50%",
-  },
+    webtoolkitBackdropFilter: "blur( 20px )"}
 };
 
 function Presentation() {

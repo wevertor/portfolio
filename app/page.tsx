@@ -1,8 +1,9 @@
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import NavigationBar from "@/components/Navbar";
-import Presentation from "@/components/Presentation";
-import PresentationText from "@/components/PresentationText";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
+import NavigationBar from "@/components/navbar";
+import Presentation from "@/components/presentation";
+import PresentationText from "@/components/presentationText";
+
 
 export default function Home() {
   return (

@@ -72,10 +72,10 @@ function PresentationText() {
             </p>
           </div>
         </div>
-        <img
+        {/*<img
           src="https://avatars.githubusercontent.com/u/19598108?v=4"
           style={styles.profileImage}
-        />
+        />*/}
       </div>
     </section>
   );

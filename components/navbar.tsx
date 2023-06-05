@@ -1,7 +1,7 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Poppins } from "next/font/google";
+import { ScrollLink } from "./ScrollLink";
+import Link from "next/link";
+import {FaGithubSquare, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 
 const styles = {
   navbar: {
@@ -10,52 +10,37 @@ const styles = {
   },
 };
 
+const poppins = Poppins({
+  weight: '300',
+  subsets: ['latin'],
+  display: 'swap'
+});
+
 function NavigationBar() {
   const items = [
     { link: "#about", title: "Sobre" },
     { link: "#projects", title: "Projetos" },
     { link: "#contact", title: "Contato" },
   ];
-  const [isPageScrolled, setIsPageScrolled] = useState(false);
-
-  const scrollHandler = () => {
-    if (window.scrollY >= 20) {
-      setIsPageScrolled(true);
-    } else {
-      setIsPageScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", scrollHandler);
-  });
-
-  const handleClick = (id: String) =>
-    document.querySelector("[id=" + id + "]").scrollIntoView();
 
   return (
-    <Navbar
-      style={styles.navbar}
-      expand="lg"
-      fixed={isPageScrolled ? "top" : undefined}
-    >
-      <Nav className="justify-center">
-        <ul className="flex py-4 flex-row-reverse">
+    <nav style={styles.navbar} className={"px-32 py-3"}>
+      <div className="flex md:justify-between text-sm text-white justify-center">
+        <ul className="md:flex space-x-20 py-8 flex-row hidden">
           {items.map((item, index) => (
-            // eslint-disable-next-line react/jsx-key
             <li key={index}>
-              <a
-                href={item.link}
-                onClick={() => handleClick(item.link)}
-                className="px-8 text-lg text-white"
-              >
+              <ScrollLink href={item.link} className=" font-light">
                 {item.title}
-              </a>
+              </ScrollLink>
             </li>
           ))}
         </ul>
-      </Nav>
-    </Navbar>
+        <ul className="flex space-x-6 py-8 flex-row">
+            <li><a><FaLinkedin className="text-3xl" /></a></li>
+            <li><a><FaGithubSquare className="text-3xl" /></a></li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 

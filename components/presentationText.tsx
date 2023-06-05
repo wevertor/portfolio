@@ -43,13 +43,13 @@ const styles = {
 function PresentationText() {
   return (
     <section style={styles.glassBackground} id="about">
-      <div style={styles.container}>
-        <div style={styles.textContainer}>
+      <div className="flex justify-between">
+        <div className="text-left max-w-3xl">
           <h1 style={styles.title}>Um pouco sobre mim...</h1>
-          <div style={styles.paragraphs}>
+          <div className="text-base text-white">
             <br />
             <p>
-              Moro em <b style={styles.highlight}>São Luís - MA, Brasil</b>. Sou
+              Moro em <b className="text-teal-500">São Luís - MA, Brasil</b>. Sou
               um desenvolvedor júnior na reta final da minha graduação em
               Ciência da Computação pela Universidade Federal do Maranhão.
             </p>
@@ -57,9 +57,9 @@ function PresentationText() {
             <p>
               Gosto de estar sempre me desafiando a aprender coisas novas. Meus
               campos de interesse são{" "}
-              <b style={styles.highlight}>Desenvolvimento Web</b>, além de{" "}
-              <b style={styles.highlight}>Desenvolvimento de Jogos</b> e{" "}
-              <b style={styles.highlight}>Machine Learning</b>.
+              <b className="text-teal-500">Desenvolvimento Web</b>, além de{" "}
+              <b className="text-teal-500">Desenvolvimento de Jogos</b> e{" "}
+              <b className="text-teal-500">Machine Learning</b>.
             </p>
             <br />
             <p>

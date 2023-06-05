@@ -11,7 +11,7 @@ function Presentation() {
     <section>
       <div style={styles.glassBackground} className="px-32 py-48">
         <div className="text-center self-center">
-          <h1 className="text-6xl text-teal-400">Olá!</h1>
+          <h1 className="text-6xl text-teal-500">Olá!</h1>
           <h1 className="text-5xl font-semibold text-white">Eu sou Weverton Trindade</h1>
         </div>
         {/* <Image src="img/banner.png" fluid style={styles.banner} /> */}

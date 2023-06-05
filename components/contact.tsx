@@ -13,7 +13,7 @@ const styles = {
 function Contact() {
   return (
     <section style={styles.glassBackground} id="contact">
-      <div className="text-white justify-self-center text-center" style={styles.textContainer}>
+      <div className="text-white justify-self-center text-center">
         <h1 className="font-semibold text-5xl">Encontre-me em:</h1>
         <p className="text-lg">Sinta-se livre para se conectar comigo</p>
         <div className="flex justify-center">

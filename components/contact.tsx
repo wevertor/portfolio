@@ -6,15 +6,14 @@ const styles = {
     //boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
     backdropFilter: "blur( 20px ) ",
     webtoolkitBackdropFilter: "blur( 20px )",
-    padding: "9rem 10rem",
   },
 };
 
 function Contact() {
   return (
-    <section style={styles.glassBackground} id="contact">
+    <section style={styles.glassBackground} id="contact" className="px-32 py-48">
       <div className="text-white justify-self-center text-center">
-        <h1 className="font-semibold text-5xl">Encontre-me em:</h1>
+        <h1 className="font-semibold text-3xl sm:text-5xl">Encontre-me em:</h1>
         <p className="text-lg">Sinta-se livre para se conectar comigo</p>
         <div className="flex justify-center">
             <div className="flex flex-row">

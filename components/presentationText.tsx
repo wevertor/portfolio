@@ -5,48 +5,16 @@ const styles = {
     //boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
     backdropFilter: "blur( 20px ) ",
     webtoolkitBackdropFilter: "blur( 20px )",
-    padding: "9rem 10rem",
-  },
-  textContainer: {
-    maxWidth: "50rem",
-    textAlign: "left",
-    alignSelf: "center",
-    fontFamily: "Poppins, Sans-serif",
-    color: "white",
-  },
-  title: {
-    fontWeight: "600",
-    color: "white",
-    fontSize: "36pt",
-  },
-  paragraphs: {
-    textAlign: "left",
-    maxWidth: "50rem",
-    fontSize: "14pt",
-  },
-  highlight: {
-    color: "#20C3A0",
-    fontWeight: 600,
-  },
-  profileImage: {
-    maxheight: "100%",
-    width: "auto",
-    marginRight: "5rem",
-    borderRadius: 1000
-  },
-  container: {
-    display: "flex",
-    justifyContent: "space-between",
   },
 };
 
 function PresentationText() {
   return (
-    <section style={styles.glassBackground} id="about">
+    <section style={styles.glassBackground} id="about" className="px-20 sm:px-32">
       <div className="flex justify-between">
         <div className="text-left max-w-3xl">
-          <h1 className="text-5xl font-semibold text-white">Um pouco sobre mim...</h1>
-          <div className="text-base text-white">
+          <h1 className="text-center sm:text-left text-3xl sm:text-5xl font-semibold text-white">Um pouco sobre mim...</h1>
+          <div className="text-base text-justify text-white">
             <br />
             <p>
               Moro em <b className="text-teal-500">São Luís - MA, Brasil</b>. Sou

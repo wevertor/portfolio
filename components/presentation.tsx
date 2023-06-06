@@ -10,9 +10,9 @@ function Presentation() {
   return (
     <section>
       <div style={styles.glassBackground} className="px-32 py-48">
-        <div className="text-center self-center">
-          <h1 className="text-6xl text-teal-500">Olá!</h1>
-          <h1 className="text-5xl font-semibold text-white">Eu sou Weverton Trindade</h1>
+        <div className="sm:text-center self-center">
+          <h1 className="text-3xl sm:text-6xl text-teal-500 text-center">Olá!</h1>
+          <h1 className="text-2xl sm:text-5xl font-semibold text-white text-center">Eu sou Weverton Trindade</h1>
         </div>
         {/* <Image src="img/banner.png" fluid style={styles.banner} /> */}
       </div>

@@ -45,7 +45,7 @@ function PresentationText() {
     <section style={styles.glassBackground} id="about">
       <div className="flex justify-between">
         <div className="text-left max-w-3xl">
-          <h1 style={styles.title}>Um pouco sobre mim...</h1>
+          <h1 className="text-5xl font-semibold text-white">Um pouco sobre mim...</h1>
           <div className="text-base text-white">
             <br />
             <p>
@@ -64,7 +64,7 @@ function PresentationText() {
             <br />
             <p>
               Durante a minha jornada adquiri conhecimentos em{" "}
-              <b style={styles.highlight}>
+              <b className="text-teal-500 font-semibold">
                 Javascript (Node.js, React.js), Java (Spring Boot), Python
                 (scikit-learn, tensorflow) e C# (Unity)
               </b>

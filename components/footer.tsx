@@ -1,47 +1,25 @@
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaGithubSquare } from "react-icons/fa";
 
 const styles = {
   glassBackground: {
     background: "rgba( 0, 0, 0, 0.90 )",
     backdropFilter: "blur( 20px ) ",
     webtoolkitBackdropFilter: "blur( 20px )",
-    padding: "1.3rem",
-  },
-  icons: {
-    margin: "0.3rem",
-  },
-  iconsLink: {
-    color: "white",
   },
 };
 
 function Footer() {
   return (
-    <section style={styles.glassBackground}>
-      <div
-        style={{
-          color: "white",
-          alignItems: "center",
-          justifyContent: "space-between",
-          marginLeft: "8rem",
-          marginRight: "8rem",
-        }}
+    <section style={styles.glassBackground} className="px-32 py-6" >
+      <div className="flex text-white items-center justify-between mx-8"
       >
-        <div style={{ textAlign: "left" }}>
+        <div>
           Projetado e Desenvolvido por Weverton Trindade
         </div>
-        <div style={{ textAlign: "right" }}>
-          <a href="https://github.com/wevertor" style={styles.iconsLink}>
-            <FaGithub size={24} style={styles.icons} />
-          </a>
-
-          <a href="https://linkedin.com/in/wevertor" style={styles.iconsLink}>
-            <FaLinkedin size={24} style={styles.icons} />
-          </a>
-
-          <a href="https://instagram.com/trindamaster" style={styles.iconsLink}>
-            <FaInstagram size={24} style={styles.icons} />
-          </a>
+        <div className="flex flex-row space-x-6">
+          <a href="https://github.com/wevertor"><FaGithubSquare className="text-3xl" /></a>
+          <a  href="https://linkedin.com/in/wevertor"><FaLinkedin className="text-3xl" /></a>
+          <a href="https://instagram.com/trindamaster"><FaInstagram className="text-3xl" /></a>
         </div>
       </div>
     </section>

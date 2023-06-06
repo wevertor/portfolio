@@ -35,8 +35,8 @@ function NavigationBar() {
           ))}
         </ul>
         <ul className="flex space-x-6 py-8 flex-row">
-            <li><a><FaLinkedin className="text-3xl" /></a></li>
-            <li><a><FaGithubSquare className="text-3xl" /></a></li>
+            <li><a href="https://linkedin.com/in/wevertor"><FaLinkedin className="text-3xl" /></a></li>
+            <li><a href="https://github.com/wevertor"><FaGithubSquare className="text-3xl" /></a></li>
         </ul>
       </div>
     </nav>

@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={inter.className} lang="ptBR">
+    <html className={poppins.className} lang="ptBR">
       <body>{children}</body>
     </html>
   );
